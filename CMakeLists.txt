@@ -189,5 +189,12 @@ if(WASMEDGE_BUILD_EXAMPLE)
   add_subdirectory(examples/plugin/get-string)
 endif()
 
+# Add external libraries
+add_subdirectory(external/llama.cpp)
+
+# Add subdirectories
+add_subdirectory(src)
+add_subdirectory(plugin)
+
 include(CPack)
 include(CPackComponent)
